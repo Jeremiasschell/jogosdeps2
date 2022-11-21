@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.albun{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 2vw;
+padding: 2vw;
+}
+
+body{ background-color:rgb(87, 162, 247)}
+
+header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: green;
+    text-align: center;
+    padding: 5px 5;
+}
+
+.foto-albun img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.foto-albun{
+    filter: brightness(.3) ;
+    width: 350px;
+    height: 350px;
+    border: 10px solid red;
+    flex-grow: 1;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: transform .5s;
+}
+
+.foto-albun:hover{
+    filter: brightness() ;
+    transform: scale(1.2);
+    cursor: url(IMG/ps2.cur),default;
+
+}
+
+footer{
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+    font-size: 20px;
+    left: 0;
+    background: yellow;
+    text-align: center;
+    padding: 5px 5;
+}
+
